@@ -42,7 +42,7 @@ class ElementContent extends StatelessWidget {
           )
         : SizedBox(
             height: 60,
-            child: Center(
+            child: Container(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,7 +53,7 @@ class ElementContent extends StatelessWidget {
                       child: Text(
                         "${title}",
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+                            fontSize: 40, fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -62,8 +62,7 @@ class ElementContent extends StatelessWidget {
                     child: FittedBox(
                       child: Text(
                         "${value}",
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+                        style: TextStyle(fontSize: 20),
                       ),
                     ),
                   ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mininstryoffinance/Widgwts/commitconsttexts.dart';
-import 'package:mininstryoffinance/Widgwts/elmentcontent.dart';
+import 'package:mininstryoffinance/Constants/commitconsttexts.dart';
+import 'package:mininstryoffinance/View/Widgwts/elmentcontent.dart';
 
 class CommitmentWidget extends StatelessWidget {
   const CommitmentWidget({
@@ -26,7 +26,7 @@ class CommitmentWidget extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-          height: 400,
+          height: 450,
           width: 400,
           padding: EdgeInsets.symmetric(horizontal: 30),
           decoration: BoxDecoration(
@@ -54,19 +54,14 @@ class CommitmentWidget extends StatelessWidget {
                 title: CommitConstTexts.commitAuthOfficer,
                 value: authOfficer,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ElementContent(
-                    title: CommitConstTexts.commitSubmitDate,
-                    value: submitDate,
-                  ),
-                  ElementContent(
-                    isRow: true,
-                    title: CommitConstTexts.commitForDuration,
-                    value: forDuration,
-                  )
-                ],
+              ElementContent(
+                title: CommitConstTexts.commitSubmitDate,
+                value: submitDate,
+              ),
+              ElementContent(
+                isRow: false,
+                title: CommitConstTexts.commitForDuration,
+                value: forDuration,
               ),
             ],
           )),

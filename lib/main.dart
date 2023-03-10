@@ -5,16 +5,14 @@ import 'package:mininstryoffinance/MainBranch/Branches/branch.dart';
 import 'package:mininstryoffinance/MainBranch/Home/mainhome.dart';
 import 'package:mininstryoffinance/MainBranch/Home/mainsettings.dart';
 import 'package:mininstryoffinance/MainBranch/Rquests/comeingrquest.dart';
-import 'package:mininstryoffinance/SubBranch/Auth/login.dart';
-import 'package:mininstryoffinance/SubBranch/Commitments/detailsCommitments.dart';
-import 'package:mininstryoffinance/SubBranch/Commitments/elementsCommitments.dart';
-import 'package:mininstryoffinance/SubBranch/Commitments/newcommitment.dart';
-import 'package:mininstryoffinance/SubBranch/Requests/currentrquest.dart';
-import 'package:mininstryoffinance/SubBranch/Home/homepage.dart';
-import 'package:mininstryoffinance/SubBranch/Requests/newrquest.dart';
-import 'package:mininstryoffinance/SubBranch/Home/record.dart';
-import 'package:mininstryoffinance/SubBranch/Home/settings.dart';
-import 'package:mininstryoffinance/load.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Auth/login.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Commitments/detailsCommitments.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Commitments/elementsCommitments.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Commitments/newcommitment.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Home/homepage.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Requests/newrquest.dart';
+import 'package:mininstryoffinance/View/Screens/DeCenterazionSc/Home/settings.dart';
+import 'package:mininstryoffinance/View/Screens/load.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,8 +38,6 @@ class MyApp extends StatelessWidget {
         "login": (context) => Login(),
         "homepage": (context) => Home(),
         "newrquest": (context) => NewReuest(),
-        "currentrquest": (context) => CurrentRquests(),
-        "record": (context) => Record(),
         "settings": (context) => Seittings(),
         "newcommitment": (context) => NenCommitment(),
         "elemntcommitment": (context) => ElmentsCommitment(),

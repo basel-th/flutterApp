@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mininstryoffinance/Constants/TitlesConstTexts.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -30,7 +31,7 @@ class _LoginState extends State<Login> {
                       Container(
                         margin: EdgeInsets.only(top: 200),
                         child: Text(
-                          "تسجيل الدخول",
+                          "${TitlesConstText.Login}",
                           style: TextStyle(
                               fontSize: 50,
                               color: Colors.white,
@@ -44,7 +45,7 @@ class _LoginState extends State<Login> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              " اسم المستخدم",
+                              "${TitlesConstText.Username}",
                               style: TextStyle(
                                   fontSize: 28,
                                   color: Colors.white,
@@ -58,7 +59,7 @@ class _LoginState extends State<Login> {
                                   filled: true,
                                   fillColor: Colors.white,
                                   prefixIcon: Icon(Icons.person),
-                                  hintText: " اسم المستخدم",
+                                  hintText: "${TitlesConstText.Username}",
                                   border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(15),
                                       borderSide: BorderSide(
@@ -68,7 +69,7 @@ class _LoginState extends State<Login> {
                               height: 20,
                             ),
                             Text(
-                              "كلمة المرور",
+                              "${TitlesConstText.Password}",
                               style: TextStyle(
                                   fontSize: 30,
                                   color: Colors.white,
@@ -84,7 +85,7 @@ class _LoginState extends State<Login> {
                                   fillColor: Colors.white,
                                   prefixIcon: Icon(Icons.person),
                                   prefixIconColor: Colors.white,
-                                  hintText: "كلمة المرور ",
+                                  hintText: "${TitlesConstText.Password}",
                                   border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(15),
                                       borderSide: BorderSide(width: 2))),
@@ -106,7 +107,7 @@ class _LoginState extends State<Login> {
                                       .pushReplacementNamed("homepage");
                                 }),
                                 child: Text(
-                                  "تسجيل الدخول",
+                                  "${TitlesConstText.Login}",
                                   style: TextStyle(
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold),

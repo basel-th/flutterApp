@@ -1,8 +1,7 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:mininstryoffinance/Widgwts/commitwidget.dart';
-import 'package:mininstryoffinance/Widgwts/detailscommitmenwiget.dart';
-import 'package:mininstryoffinance/Widgwts/requestconsttexts.dart';
+import 'package:mininstryoffinance/Constants/TitlesConstTexts.dart';
+import 'package:mininstryoffinance/View/Widgwts/detailscommitmenwiget.dart';
+import 'package:mininstryoffinance/View/Widgwts/SubDrawerwidget.dart';
 
 class DetailsCommitment extends StatefulWidget {
   const DetailsCommitment({super.key});
@@ -21,13 +20,13 @@ class _DetailsCommitmentState extends State<DetailsCommitment> {
         floatingActionButtonLocation:
             FloatingActionButtonLocation.miniCenterTop,
         floatingActionButton: Container(
-            margin: EdgeInsets.only(top: 300),
+            margin: EdgeInsets.only(top: 260),
             padding: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
               color: Color.fromARGB(234, 34, 34, 34),
               borderRadius: BorderRadius.circular(0),
             ),
-            height: 300,
+            height: 260,
             width: double.infinity,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -119,8 +118,8 @@ class _DetailsCommitmentState extends State<DetailsCommitment> {
                       }),
                       child: Container(
                         alignment: Alignment.center,
-                        margin: EdgeInsets.symmetric(vertical: 10),
-                        height: 50,
+                        margin: EdgeInsets.symmetric(vertical: 5),
+                        height: 40,
                         width: 340,
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 255, 255, 255),
@@ -145,107 +144,18 @@ class _DetailsCommitmentState extends State<DetailsCommitment> {
               alignment: Alignment.bottomRight,
               padding: EdgeInsets.only(right: 20),
               child: Text(
-                "تفاصيل التزام",
+                "${TitlesConstText.DetailsCommintent}",
                 style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
               )),
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
           toolbarHeight: 70,
           elevation: 0,
-          // actions: [
-          //   IconButton(
-          //     onPressed: () {},
-          //     icon: Icon(
-          //       Icons.home,
-          //       size: 30,
-          //       color: Colors.blue,
-          //     ),
-          //   )
-          // ],
         ),
-        drawer: Drawer(
-          backgroundColor: Color.fromARGB(225, 255, 255, 255),
-          child: Column(children: [
-            UserAccountsDrawerHeader(
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 136, 160, 226),
-                ),
-                currentAccountPicture: CircleAvatar(
-                  backgroundColor: Colors.white,
-                ),
-                accountName: Text("BASEL AHMED"),
-                accountEmail: Text("baselahmed856@gmail.com")),
-            ListTile(
-              shape: Border(bottom: BorderSide(color: Colors.blue)),
-              trailing: Icon(Icons.home),
-              iconColor: Colors.blue,
-              title: Text(
-                "الصفحة الرئيسة",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
-                textAlign: TextAlign.end,
-              ),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed("homepage");
-              },
-            ),
-            ListTile(
-              shape: Border(bottom: BorderSide(color: Colors.blue)),
-              trailing: Icon(Icons.add),
-              iconColor: Colors.blue,
-              title: Text(
-                "  التزام جديد",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
-                textAlign: TextAlign.end,
-              ),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed("newcommitment");
-              },
-            ),
-            ListTile(
-              shape: Border(bottom: BorderSide(color: Colors.blue)),
-              trailing: Icon(Icons.bookmark_outline),
-              iconColor: Colors.blue,
-              title: Text(
-                "التزامات",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
-                textAlign: TextAlign.end,
-              ),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed("elemntcommitment");
-              },
-            ),
-            ListTile(
-              shape: Border(bottom: BorderSide(color: Colors.blue)),
-              trailing: Icon(Icons.settings),
-              iconColor: Colors.blue,
-              title: Text(
-                " الاعدادت",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
-                textAlign: TextAlign.end,
-              ),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed("settings");
-              },
-            ),
-            ListTile(
-              trailing: Icon(Icons.exit_to_app),
-              iconColor: Colors.blue,
-              title: Text(
-                " تسجيل خروج",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.normal),
-                textAlign: TextAlign.end,
-              ),
-              onTap: () {
-                Navigator.of(context).pushReplacementNamed("load");
-              },
-            ),
-          ]),
-        ),
+        drawer: SubDrawerWidget(),
         body: ListView(
           children: [
             Container(
-                // width: double.infinity,
-                // height: double.infinity,
                 child: Container(
               padding: EdgeInsets.only(top: 280, bottom: 80),
               child: Column(
@@ -254,13 +164,14 @@ class _DetailsCommitmentState extends State<DetailsCommitment> {
                   DetailsCommitentsWedight(
                     Chpter: "one",
                     Part: "tow",
-                    Type: "rmfodm",
+                    Type: "dlmlfmf",
                     Item: "flfl",
                     Cotineues: "no",
                     Date: "2033/20/22",
-                    Aomuant: "390202",
-                    BlanceAfterApporved: "lmfcmnsdmd",
-                    Descrption: "momndonmfonmdofmndomfomdom",
+                    Aomuant: "39020245343435535554647364734674364764736",
+                    BlanceAfterApporved: "lmfcmnsdmenkdebjebjbdjebjebjdbd",
+                    Descrption:
+                        "momndonmfonmdofmnddkwlkndhiwhdihwdodsljdojdenkdnkdnkrrhwodjowjodwjwojowjdowjodjodjihiwhdidhiwhomfomdom",
                   ),
                   DetailsCommitentsWedight(
                     Chpter: "lnmolnon",

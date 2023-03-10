@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mininstryoffinance/Widgwts/requestconsttexts.dart';
-import 'package:mininstryoffinance/Widgwts/rquestcontent.dart';
+import 'package:mininstryoffinance/Constants/requestconsttexts.dart';
+import 'package:mininstryoffinance/View/Widgwts/rquestcontent.dart';
 
 class DetailsCommitentsWedight extends StatelessWidget {
   const DetailsCommitentsWedight(
@@ -32,7 +32,7 @@ class DetailsCommitentsWedight extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         color: Colors.white,
       ),
-      margin: EdgeInsets.symmetric(vertical: 40, horizontal: 20),
+      margin: EdgeInsets.symmetric(vertical: 30, horizontal: 15),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -64,7 +64,7 @@ class DetailsCommitentsWedight extends StatelessWidget {
           ),
           Reuestcontentelment(
             isRow: false,
-            isCloum: true,
+            isCloum: false,
             title: RquestConstText.Aomuant,
             value: Aomuant,
           ),
